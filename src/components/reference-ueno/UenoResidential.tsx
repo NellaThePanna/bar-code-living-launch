@@ -42,7 +42,7 @@ export function UenoResidential() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
                 <h3 className="text-2xl sm:text-3xl text-white font-(family-name:--ueno-sans) font-normal">
                   Residential{" "}
-                  <span className="font-(family-name:--ueno-serif) italic font-light text-(--cream-deep)">Bespoke Furniture</span>
+                  <span className="font-(family-name:--ueno-serif) italic font-light text-(--burgundy-ink)">Bespoke Furniture</span>
                 </h3>
               </div>
             </div>

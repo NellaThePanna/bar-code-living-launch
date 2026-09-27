@@ -117,7 +117,7 @@ export function UenoHero() {
               <br />
               Nature and Quiet
               <br />
-              <span className="font-(family-name:--ueno-serif) italic font-light text-(--cream-deep)">Luxury</span>
+              <span className="font-(family-name:--ueno-serif) italic font-light text-(--burgundy-ink)">Luxury</span>
             </h1>
           </div>
 
