@@ -27,7 +27,7 @@ export function UenoBrandStatement() {
         </div>
 
         <div className="relative my-20 max-w-4xl mx-auto">
-          <div className="relative bg-[#ECECE8] rounded-3xl p-8 sm:p-14 border border-neutral-300 shadow-sm flex flex-col items-center justify-center overflow-hidden">
+          <div className="relative bg-(--cream-deep) rounded-3xl p-8 sm:p-14 border border-neutral-300 shadow-sm flex flex-col items-center justify-center overflow-hidden">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none text-center">
               <span className="font-(family-name:--ueno-sans) text-2xl sm:text-4xl text-white font-medium drop-shadow-md">
                 Personalized <span className="font-(family-name:--ueno-serif) italic font-light">Interior</span>
@@ -50,7 +50,7 @@ export function UenoBrandStatement() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-4">
           <div className="md:col-span-3">
             <a
-              className="inline-flex items-center justify-between gap-4 px-6 py-3.5 rounded-full bg-(--ueno-forest) hover:bg-(--ueno-olive) text-white font-medium text-sm transition-all shadow-md group"
+              className="inline-flex items-center justify-between gap-4 px-6 py-3.5 rounded-full bg-(--burgundy-ink) hover:bg-(--burgundy-deep) text-white font-medium text-sm transition-all shadow-md group"
               href="#contact"
             >
               <span>Contact Us</span>

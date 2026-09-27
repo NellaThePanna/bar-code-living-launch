@@ -1,7 +1,7 @@
 export function UenoResidential() {
   return (
     <section
-      className="w-full bg-[#FAF9F6] py-24 px-6 md:px-12 lg:px-16 border-b border-neutral-200"
+      className="w-full bg-(--chalk) py-24 px-6 md:px-12 lg:px-16 border-b border-neutral-200"
       data-purpose="portfolio-residential"
     >
       <div className="max-w-7xl mx-auto">
@@ -42,7 +42,7 @@ export function UenoResidential() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
                 <h3 className="text-2xl sm:text-3xl text-white font-(family-name:--ueno-sans) font-normal">
                   Residential{" "}
-                  <span className="font-(family-name:--ueno-serif) italic font-light text-amber-100">Bespoke Furniture</span>
+                  <span className="font-(family-name:--ueno-serif) italic font-light text-(--burgundy-ink)">Bespoke Furniture</span>
                 </h3>
               </div>
             </div>
