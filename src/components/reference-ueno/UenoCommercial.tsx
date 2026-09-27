@@ -8,10 +8,10 @@ export function UenoCommercial() {
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pb-16">
           <div className="lg:col-span-8">
-            <span className="font-mono text-sm tracking-widest text-(--burgundy-light)/70 block mb-2">02</span>
+            <span className="font-mono text-sm tracking-widest text-amber-200/70 block mb-2">02</span>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-(family-name:--ueno-sans) font-normal tracking-tight leading-tight text-white">
               Commercial Spatial Experience ·<br />
-              <span className="font-(family-name:--ueno-serif) italic font-light text-(--burgundy-ink)">F&amp;B Interior</span>
+              <span className="font-(family-name:--ueno-serif) italic font-light text-amber-100">F&amp;B Interior</span>
             </h2>
           </div>
           <div className="lg:col-span-4 text-neutral-300 text-xs sm:text-sm leading-relaxed border-l border-white/15 pl-6 pt-2">

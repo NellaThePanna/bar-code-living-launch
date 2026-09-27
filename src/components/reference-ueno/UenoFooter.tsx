@@ -27,7 +27,7 @@ export function UenoFooter() {
                 type="email"
               />
               <button
-                className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-neutral-900 hover:bg-(--burgundy-ink) hover:text-(--chalk) font-medium text-sm transition-colors whitespace-nowrap"
+                className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-neutral-900 hover:bg-amber-100 font-medium text-sm transition-colors whitespace-nowrap"
                 type="submit"
               >
                 Inquire Now
