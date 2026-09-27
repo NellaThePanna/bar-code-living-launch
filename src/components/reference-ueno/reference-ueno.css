@@ -30,12 +30,18 @@
 }
 
 .ueno-ref .bg-dot-grid {
-  background-image: radial-gradient(#c2bcb6 1.1px, transparent 1.1px);
+  background-image: radial-gradient(rgb(99 52 60 / 0.25) 1.1px, transparent 1.1px);
   background-size: 24px 24px;
 }
 
 .ueno-ref .bg-dark-slats {
-  background: linear-gradient(90deg, #2a160f 0px, #2a160f 14px, #1d0e09 14px, #1d0e09 18px);
+  background: linear-gradient(
+    90deg,
+    var(--burgundy-deep) 0px,
+    var(--burgundy-deep) 14px,
+    color-mix(in srgb, var(--burgundy-deep) 70%, black) 14px,
+    color-mix(in srgb, var(--burgundy-deep) 70%, black) 18px
+  );
   background-size: 18px 100%;
 }
 

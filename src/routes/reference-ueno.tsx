@@ -22,7 +22,7 @@ export const Route = createFileRoute("/reference-ueno")({
 
 function ReferenceUeno() {
   return (
-    <div className="ueno-ref bg-(--ueno-chalk) text-(--ueno-charcoal) font-(family-name:--ueno-sans) antialiased selection:bg-(--ueno-terracotta) selection:text-white">
+    <div className="ueno-ref bg-white text-(--burgundy-ink) font-(family-name:--ueno-sans) antialiased selection:bg-(--burgundy-ink) selection:text-white">
       <UenoHero />
       <UenoBrandStatement />
       <UenoResidential />
