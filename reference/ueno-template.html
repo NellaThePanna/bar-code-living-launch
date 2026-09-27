@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UENO STUDIO — Spatial Architecture &amp; Interior Design</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Syne, Plus Jakarta Sans, and Playfair Display for Serifs -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&amp;family=Syne:wght@500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ueno: {
+              espresso: '#23140E',
+              darkwood: '#2E1912',
+              walnut: '#3B2017',
+              terracotta: '#9A4C2E',
+              cognac: '#8A3E1B',
+              forest: '#183823',
+              olive: '#2C4A34',
+              sage: '#506E58',
+              chalk: '#F9F8F6',
+              paper: '#F3F1EC',
+              charcoal: '#1A1817'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+<!-- Custom Architectural & Dot-Matrix Background Styling -->
+<style data-purpose="background-patterns">
+    /* Subtle technical architectural dot grid seen in UENO studio sheets */
+    .bg-dot-grid {
+      background-image: radial-gradient(#C2BCB6 1.1px, transparent 1.1px);
+      background-size: 24px 24px;
+    }
+    
+    .bg-dark-slats {
+      background: linear-gradient(90deg, 
+        #2A160F 0px, #2A160F 14px, 
+        #1D0E09 14px, #1D0E09 18px);
+      background-size: 18px 100%;
+    }
+  </style>
+<!-- Typography & Micro Polish Styles -->
+<style data-purpose="typography-and-effects">
+    .tracking-ultra-tight {
+      letter-spacing: -0.055em;
+    }
+    .smooth-transition {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+</head>
+<body class="bg-ueno-chalk text-ueno-charcoal font-sans antialiased selection:bg-ueno-terracotta selection:text-white">
+<!-- BEGIN: HeroSection -->
+<section class="relative w-full bg-ueno-darkwood text-white overflow-hidden min-h-[920px] flex flex-col justify-between" data-purpose="hero-viewport">
+<!-- Top Minimal Navigation -->
+<header class="relative z-20 w-full px-6 md:px-12 lg:px-16 pt-8 pb-6 border-b border-white/10 flex flex-wrap items-center justify-between gap-6 text-xs md:text-sm tracking-wide font-normal">
+<!-- Left: Logo Signature -->
+<div class="flex items-center gap-12">
+<a class="font-display font-bold text-2xl tracking-tighter text-white inline-flex items-baseline" href="#">
+          ue<span class="text-ueno-terracotta font-serif italic text-2xl lowercase">n</span>o
+        </a>
+<nav class="hidden lg:flex items-center gap-8 text-neutral-300">
+<a class="hover:text-white flex items-center gap-1.5 transition-colors" href="#projects">
+<span>Project</span> <span class="text-neutral-500 font-light">+</span>
+</a>
+<a class="hover:text-white flex items-center gap-1.5 transition-colors" href="#approach">
+<span>Approach</span> <span class="text-neutral-500 font-light">+</span>
+</a>
+<a class="hover:text-white flex items-center gap-1.5 transition-colors" href="#about">
+<span>About us</span> <span class="text-neutral-500 font-light">+</span>
+</a>
+</nav>
+</div>
+<!-- Right: Calendar Stamp & Inquire Link -->
+<div class="flex items-center gap-8 md:gap-14 text-neutral-300">
+<div class="hidden sm:block text-right leading-snug">
+<span class="block text-white font-medium">Sunday</span>
+<span class="text-neutral-400 text-xs">17.06 - 27 June 2026</span>
+</div>
+<a class="inline-flex items-center gap-2 text-white hover:text-ueno-terracotta font-medium transition-colors border-b border-white/20 pb-0.5" href="#contact">
+<span>Contact us</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="7" x2="17" y1="17" y2="7"></line>
+<polyline points="7 7 17 7 17 17"></polyline>
+</svg>
+</a>
+</div>
+</header>
+<!-- Hero Architectural Split Visual Canvas -->
+<div class="relative z-10 w-full flex-1 grid grid-cols-1 lg:grid-cols-12 px-6 md:px-12 lg:px-16 py-8 items-center gap-8">
+<!-- Left Column: Layered Interior Image Composition -->
+<div class="lg:col-span-6 relative flex flex-col justify-center">
+<!-- Floating Ueno Stamp mark -->
+<div class="relative w-full max-w-lg mx-auto lg:mx-0">
+<!-- Main framed architectural viewport -->
+<div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#351C14] aspect-[4/5]">
+<!-- Architectural Timber Room with Green Furniture -->
+<img alt="Immersive warm wood interior with bespoke green seating" class="w-full h-full object-cover brightness-95 contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9_fsZaVHneaoeYBwf_uKZaCM9irv7iRo2fhpRPGEL8nb8yL9dpvMhAQM7eeM3mVVRfzlDvS2ijw9EDbUdaDDA5KevPb1jibsNgzjEVfgUNX8ItmchUiEB4EhlAVvB8i4-KWH5I6KZhR5A6KUuU4PdK_LNNK7xuFRkRFM6JJR0PsgdEFs_Bpgl-y9yWZbfWtJsCw9MLAR3Zix8fxHSvRgAwpgq0aeErS-h0DPIO6tSp_bed8eiTrL_"/>
+<!-- Interior floating badge note -->
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-black/40 backdrop-blur-md border border-white/15 text-xs md:text-sm text-neutral-200">
+<p class="leading-relaxed">
+                Ueno creates immersive interiors with natural textures and deep tones.
+              </p>
+</div>
+<!-- Watermark studio branding -->
+<div class="absolute top-6 left-1/2 -translate-x-1/2 tracking-widest text-white/90 font-display font-medium text-lg drop-shadow">
+              ue<span class="italic font-serif">n</span>o
+            </div>
+</div>
+<!-- Secondary Overlapping Olive Cushion Preview -->
+<div class="absolute -bottom-6 -right-6 hidden sm:block w-48 h-36 rounded-xl overflow-hidden border-2 border-white/20 shadow-2xl">
+<img alt="Sculptural green seating detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjyh5spzC8fEhO4CWKRyyZTu6mds0M34i01Vf8ejYNaojaBFisrI4V-DRrlBi5bFv4sfilC4xZFO77F_MMJCj4dEQX7kuffLBJn_jLUYOQne6A9DOBrn-ne2R5NvC0aKH5TH4RKsfe0stCARfqaNQuSeYTGnkrl2ZlVISxTAd8i0Xyo0J1vlnPws1tcPDmDEFlKGOsZo_Hx7a9EkeV5AfZBheYKXOdDrXSxANZ9ECKNEnK4vzHsB3w"/>
+</div>
+</div>
+</div>
+<!-- Right Column: Editorial Headline & Spatial Ribbon Statement -->
+<div class="lg:col-span-6 flex flex-col justify-between h-full pt-6 lg:pl-6">
+<!-- Category & Iconography Indicators -->
+<div class="flex items-center gap-6 text-neutral-400 mb-12">
+<div class="p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-white/30 cursor-pointer transition-all">
+<svg class="w-4 h-4 text-neutral-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div class="p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-white/30 cursor-pointer transition-all">
+<svg class="w-4 h-4 text-neutral-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div class="p-2.5 rounded-full bg-white/5 border border-white/10 hover:border-white/30 cursor-pointer transition-all">
+<svg class="w-4 h-4 text-neutral-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+</div>
+<!-- Dominant Display Headline matching reference -->
+<div class="my-auto py-8">
+<h1 class="text-4xl sm:text-6xl xl:text-7xl font-sans font-normal tracking-tight leading-[1.08] text-white">
+            Spaces That Breathe<br/>
+            Nature and Quiet<br/>
+<span class="font-serif italic font-light text-amber-100/90">Luxury</span>
+</h1>
+</div>
+<!-- Bottom Technical Badge Indicators -->
+<div class="grid grid-cols-3 pt-8 border-t border-white/10 text-xs md:text-sm text-neutral-400">
+<div>
+<span class="text-white font-medium block">Professional</span>
+<span>Interior Studio</span>
+</div>
+<div>
+<span class="text-white font-medium block">06 Solutions</span>
+<span>Spatial Systems</span>
+</div>
+<div class="text-right sm:text-left">
+<span class="text-white font-medium block">Est. 2019</span>
+<span>Milan &amp; Kyoto</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Soft bottom vignette divider -->
+<div class="w-full h-10 bg-gradient-to-b from-transparent to-ueno-espresso/80"></div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: Section01_BrandStatement -->
+<!-- Architectural dot-matrix section with huge UENOSTUDIO display -->
+<section class="relative w-full bg-white bg-dot-grid py-20 px-6 md:px-12 lg:px-16 border-b border-neutral-200" data-purpose="brand-statement-grid">
+<div class="max-w-7xl mx-auto">
+<!-- Colossal Full-Width Display Typography -->
+<div class="w-full text-center overflow-hidden mb-12">
+<h2 class="font-sans font-extrabold text-[13vw] leading-none tracking-ultra-tight text-neutral-900 select-none uppercase">
+          UENOSTUDIO
+        </h2>
+</div>
+<!-- Studio Philosophy Pillars -->
+<div class="flex flex-wrap items-center justify-between gap-4 py-4 border-y border-neutral-300/80 text-xs sm:text-sm md:text-base font-medium tracking-wide text-neutral-800">
+<span class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-neutral-900"></span> User Centered
+        </span>
+<span class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-neutral-900"></span> Elegant
+        </span>
+<span class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-neutral-900"></span> Narrative
+        </span>
+<span class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-neutral-900"></span> Optimized
+        </span>
+</div>
+<!-- Center Feature Showcase: Forest Green Architectural Storage Cabinet -->
+<div class="relative my-20 max-w-4xl mx-auto">
+<div class="relative bg-[#ECECE8] rounded-3xl p-8 sm:p-14 border border-neutral-300 shadow-sm flex flex-col items-center justify-center overflow-hidden">
+<!-- Product Floating Banner -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 pointer-events-none text-center">
+<span class="font-sans text-2xl sm:text-4xl text-white font-medium drop-shadow-md">
+              Personalized <span class="font-serif italic font-light">Interior</span>
+</span>
+</div>
+<!-- Forest Green Credenza Product Asset -->
+<div class="relative z-10 w-full max-w-2xl transform hover:scale-[1.02] transition-transform duration-500">
+<img alt="Bespoke deep forest green lacquered interior storage cabinet" class="w-full h-auto max-h-[380px] object-cover rounded-xl filter drop-shadow-2xl brightness-90 contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCifqgE7tv0i-GlhzitzFHG29baqNd3i-ozn79cDVfsq8WFVj7k4xFvrXfPFUphrYm3p2K_Ncs235useOQ25MHPO9dY4loW_aV2tAnv7892Od4bI_OCL9rhDXBxlBbYeWhuYrvfq4A21WsfbUK_RVhqq6Bgy_N5ZAVosbz4VovhbpCaKlaqRcrUlYkZKP24d3HfOVaVRwOnF6doeQCmVnjHN1-T528VvDWEjRLD4-EWqVX6r1PUmk4V"/>
+</div>
+<!-- Micro specs indicator -->
+<div class="w-full flex justify-between items-center mt-6 pt-4 border-t border-neutral-300/60 text-[11px] text-neutral-500 font-mono tracking-wider">
+<span>SPEC: BESPOKE LACQUERED JOINERY</span>
+<span>COLLECTION 2026</span>
+</div>
+</div>
+</div>
+<!-- Bottom Action & Accolades Row -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pt-4">
+<!-- Left Pill CTA Button -->
+<div class="md:col-span-3">
+<a class="inline-flex items-center justify-between gap-4 px-6 py-3.5 rounded-full bg-ueno-forest hover:bg-ueno-olive text-white font-medium text-sm transition-all shadow-md group" href="#contact">
+<span>Contact Us</span>
+<div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
+<svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</a>
+</div>
+<!-- Middle Studio Award Citation -->
+<div class="md:col-span-4 text-xs sm:text-sm text-neutral-600 border-l border-neutral-300 pl-6 leading-relaxed">
+<p class="font-medium text-neutral-900">Awarded — Best Interior Studio</p>
+<p class="text-neutral-500">RumaRoma at RumaRoma HQ — 2026</p>
+</div>
+<!-- Right Explanatory Narrative -->
+<div class="md:col-span-5 text-xs sm:text-sm text-neutral-600 leading-relaxed lg:pl-6">
+<p>
+            Ueno crafts stunning interiors that seamlessly blend organic materials, vibrant colors, and the profound essence of human experience, creating spaces that truly resonate.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section01_BrandStatement -->
+<!-- BEGIN: Section02_BespokeFurniturePortfolio -->
+<!-- 01 Custom Living Furniture & Spatial Studies -->
+<section class="w-full bg-[#FAF9F6] py-24 px-6 md:px-12 lg:px-16 border-b border-neutral-200" data-purpose="portfolio-residential">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header with Category Pill -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
+<div>
+<h2 class="text-3xl sm:text-5xl font-sans font-normal text-neutral-900 leading-tight">
+            Spaces That Breathe Nature<br/>and Quiet Luxury
+          </h2>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-base md:text-lg font-medium text-neutral-800">Custom Living Furniture</span>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-900 text-white text-xs font-medium hover:bg-ueno-terracotta transition-colors" href="#furniture">
+<span>Learn more</span>
+<svg class="w-3 h-3" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+<!-- Section Numeric ID & Divider -->
+<div class="text-neutral-400 font-mono text-sm tracking-wider pb-4 border-b border-neutral-300">
+        01 / RESIDENTIAL ARCHITECTURE
+      </div>
+<!-- Asymmetrical 3-Column Furniture Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 items-start">
+<!-- Main Card (Col 1-7): Cognac Armchair & Bespoke Statement -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[16/10] bg-neutral-200 group">
+<img alt="Curved cognac leather bespoke armchair with hand holding coffee cup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2-_d1xbeFXH_X4OtH95CchUiUSHhfqQMUHx455P3S-pupPVy0cYjWIXQzFi6CTh8-d-eNiIChyB-igV6kz_AcKW40y4Cg07Jyg1lxjcclo2Opv8w_sEOl_glGp3dYu2IaMo1TcSuMXzgmpWOlJHtSMsuCIqAuILM2muPwHASLBLJrxop1ROC9FrMJIpkhgDC1MoyJ2I7LxKutvhDX5b5jUomoKP8Jb7tZ4sRILag8RGRKrbDNnI0Y"/>
+<!-- Title Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8">
+<h3 class="text-2xl sm:text-3xl text-white font-sans font-normal">
+                Residential <span class="font-serif italic font-light text-amber-100">Bespoke Furniture</span>
+</h3>
+</div>
+</div>
+<!-- Metadata Spec Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 text-xs sm:text-sm text-neutral-600">
+<div class="border-t border-neutral-300 pt-3">
+<span class="block font-semibold text-neutral-900">Design Approach</span>
+<p class="mt-1 text-neutral-600">An inviting, calm, human-centered seating piece designed for prolonged repose.</p>
+</div>
+<div class="border-t border-neutral-300 pt-3">
+<span class="block font-semibold text-neutral-900">Material Strategy</span>
+<p class="mt-1 text-neutral-600">Upholstery: warm brown leather (earth tone) on solid smoked walnut base.</p>
+</div>
+</div>
+</div>
+<!-- Center Column (Col 8-9): Olive Green Modular Bench -->
+<div class="lg:col-span-3 flex flex-col justify-between h-full">
+<div>
+<div class="rounded-2xl overflow-hidden aspect-square bg-neutral-200 shadow-md">
+<img alt="Moss green modular seating form" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyscq6_Zwo_TiWFuyvGOU5fLvn0wb0wSMMHa4rZT1EgO49PtRiBVN9j3sTYVyfIaFkc16eBMZWG4g9FWxk2pMZfhYqegdx97rQl7PgMdRN2fpyd_wVBDs5hyRJVRF9WtzXLh5iqqiJKmHbQO38Y4fvAyhxwluQ8dXed-cOmqk5l8GavCa-0TfEoDBpJaBnbZ3F897i3zRAR4pV7sjUd7JKoHtrJAQX8pl2ExVksxMlO8Z_rCAYbdaR"/>
+</div>
+<div class="mt-6 border-t border-neutral-300 pt-3 text-xs sm:text-sm">
+<span class="block font-semibold text-neutral-900">Comfort Engineering</span>
+<p class="mt-1 text-neutral-600">Balanced cushion density (soft + supportive multi-density latex).</p>
+</div>
+</div>
+</div>
+<!-- Right Column (Col 10-12): Woven Cord Chair & Gallery Navigation -->
+<div class="lg:col-span-2 flex flex-col">
+<div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-neutral-200 shadow-md group">
+<img alt="Scandinavian paper cord woven chair craft detail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrvdF7tkcWwg_XHbUc3dgb-NRVgegMokzJ8nCY6gFTauMTEynX_z_uY8j4039IFCQOA6YPMmoGbhj5HEeKNMJTU6zTK1Uc5WTBjfdoYdYn8JrJgVa10ueeD5zxBz3uI1cnCjiT7oPUA8v2tCDWrwj4MyQPn2x-QEbGgjeirJmykH57QZDuN6Ygc1uNYgM75VQLzsoFCSGAjUwIzmIfbsJQBE7pr8ou0nN16nkelV_JE_i_T8gjCywN"/>
+<!-- Directional Navigation Pills -->
+<div class="absolute bottom-4 right-4 flex items-center gap-1.5 p-1.5 rounded-full bg-white/80 backdrop-blur-md border border-neutral-200">
+<button aria-label="Previous image" class="w-8 h-8 rounded-full bg-white text-neutral-800 flex items-center justify-center hover:bg-neutral-900 hover:text-white transition-colors">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<button aria-label="Next image" class="w-8 h-8 rounded-full bg-neutral-900 text-white flex items-center justify-center hover:bg-ueno-forest transition-colors">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section02_BespokeFurniturePortfolio -->
+<!-- BEGIN: Section03_CommercialSpatialExperience -->
+<!-- 02 Dark Wood F&B Interior Showcase -->
+<section class="relative w-full bg-ueno-darkwood text-white py-24 px-6 md:px-12 lg:px-16 overflow-hidden" data-purpose="portfolio-commercial">
+<!-- Background Vertical Slatted Oak Texture -->
+<div class="absolute inset-0 bg-dark-slats opacity-30 pointer-events-none"></div>
+<div class="relative z-10 max-w-7xl mx-auto">
+<!-- Section 02 Tag & Header -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pb-16">
+<div class="lg:col-span-8">
+<span class="font-mono text-sm tracking-widest text-amber-200/70 block mb-2">02</span>
+<h2 class="text-3xl sm:text-5xl lg:text-6xl font-sans font-normal tracking-tight leading-tight text-white">
+            Commercial Spatial Experience ·<br/>
+<span class="font-serif italic font-light text-amber-100">F&amp;B Interior</span>
+</h2>
+</div>
+<div class="lg:col-span-4 text-neutral-300 text-xs sm:text-sm leading-relaxed border-l border-white/15 pl-6 pt-2">
+<p>
+            Ueno crafts stunning interiors that seamlessly blend organic materials, vibrant colors, and the profound essence of human experience, creating spaces that truly resonate.
+          </p>
+</div>
+</div>
+<!-- Floating Architectural Project Overlays -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+<!-- Large White Architectural Card: "Our Approach for Sumimasen" -->
+<div class="lg:col-span-8 bg-white text-neutral-900 rounded-3xl p-8 sm:p-10 shadow-2xl">
+<div class="flex items-center justify-between pb-6 border-b border-neutral-200">
+<div>
+<span class="text-xs uppercase font-mono tracking-wider text-neutral-400 block mb-1">Sumimasen F&amp;B</span>
+<h3 class="text-2xl sm:text-3xl font-sans font-medium text-neutral-900">
+                Our Approach for Sumimasen
+              </h3>
+</div>
+<a class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-neutral-700 hover:text-ueno-forest transition-colors" href="#sumimasen">
+<span>Learn more</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+<line x1="7" x2="17" y1="17" y2="7"></line>
+<polyline points="7 7 17 7 17 17"></polyline>
+</svg>
+</a>
+</div>
+<!-- Description paragraph -->
+<p class="py-6 text-xs sm:text-sm text-neutral-600 leading-relaxed max-w-2xl">
+            Drawing inspiration from Japanese values such as simplicity, order, and calmness, we can create spaces that promote tranquility and mindfulness throughout dining encounters.
+          </p>
+<!-- Dual Imagery: Minimal Table & Dining Booths -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
+<!-- Green curved lacquer table -->
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-neutral-100 group">
+<img alt="Green lacquer minimalist bespoke cafe table" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB089i8f8LVtcCOhrUH3oyjQ8YEA-qJifcQDZvrDLtRAj0pFcfUmrbyaf1Uw15my-nD6U0w3mJjd18F6JKgkdhRll9wtzi2N7IkXR6ZyABOqEIVppp2Q9esldJnYZPtWUX4IIaiZMllWEB-xhvkQOSeYLKpltcfkIthFgQAGp_QtS53zCilTunVpjw-V3gkXsP26s3WJX2fg5UBLKu80LaTaE1t_PuwLC04NtvLZ3HlkBXSO1iPFRb"/>
+<span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/50 text-[11px] text-white backdrop-blur-sm">
+                Bespoke Joinery Table
+              </span>
+</div>
+<!-- Warm wood private dining banquettes -->
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-neutral-100 group">
+<img alt="Private restaurant wooden dining booths" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEXohCRM3aQpDVXungTT35Pr4UsijVuDBXCyiqBYF8k6GO0qn6GivLomeIXhwfikSRX795xvbOLnbe4LKv5luFxcUfhij-BPccYVWNTA1XhONxQRiZhtBaXXue8PJgZj2G5qRPJjA-cTgjH_Wo9_6aJe1j8iSkuBOd5HHXFpuvT2Fu_pTVhWOoCby8n5ruHipfFcspMwi0i2y51i0Pckgu6nD_N-3uqG8E3EaSOsDCjjry8haPpg0n"/>
+<span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-black/50 text-[11px] text-white backdrop-blur-sm">
+                Acoustic Walnut Partitions
+              </span>
+</div>
+</div>
+</div>
+<!-- Overlapping Secondary Card: Semi-Private Areas & Lounge Seating -->
+<div class="lg:col-span-4 bg-white text-neutral-900 rounded-3xl p-6 sm:p-8 shadow-2xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-4 border-b border-neutral-200">
+<h4 class="font-medium text-base sm:text-lg text-neutral-900">
+                Semi-private areas
+              </h4>
+<a class="text-neutral-500 hover:text-black" href="#zones">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<line x1="7" x2="17" y1="17" y2="7"></line>
+<polyline points="7 7 17 7 17 17"></polyline>
+</svg>
+</a>
+</div>
+<p class="text-xs text-neutral-500 mt-3 mb-6">
+              Layout guides movement naturally without harsh partitions.
+            </p>
+</div>
+<!-- Modular Olive Curved Banquette Photo -->
+<div class="rounded-2xl overflow-hidden aspect-[4/3] bg-neutral-100">
+<img alt="Person sitting on low profile green curved modular couch" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp5GBZjDc5xkPng8vfe1FAECEFk68sgttMntnacSByjzzb-M_qNpb1mZQDiTyftRcBtYnkGM0df_j1EVCqn41FpHFAN0pGWzB6o9lC8mY_pV_FbNpGcQ5arGm-k24do3doMmYh__B8QAY5WB-9Qde7XMx-8Ss5b4dgojO36NX0AkUOOtF0Mk2IuHtXOsEhGjD1-QFyNQ8KlBZZsVvfSE4cMqGUs2mfitvJPzLEtrxUjQFukPDtC0HB"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Section03_CommercialSpatialExperience -->
+<!-- BEGIN: MainFooter -->
+<footer class="w-full bg-ueno-espresso text-neutral-300 pt-20 pb-12 px-6 md:px-12 lg:px-16 border-t border-white/10" data-purpose="site-footer" id="contact">
+<div class="max-w-7xl mx-auto">
+<!-- Top Newsletter / Inquiry Row -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10 items-start">
+<div class="lg:col-span-6">
+<span class="font-display text-4xl sm:text-5xl text-white font-bold tracking-tighter block mb-4">
+            UENO STUDIO
+          </span>
+<p class="text-neutral-400 text-sm max-w-md leading-relaxed">
+            Crafting contemporary architectural spaces, bespoke furniture systems, and timeless interior atmospheres worldwide.
+          </p>
+</div>
+<div class="lg:col-span-6 flex flex-col justify-end">
+<span class="text-xs uppercase tracking-wider text-neutral-400 font-mono mb-3">Initiate a Collaboration</span>
+<form class="flex flex-col sm:flex-row items-center gap-3" onsubmit="event.preventDefault()">
+<input class="w-full px-5 py-3.5 rounded-full bg-white/5 border border-white/15 text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-white transition-colors" placeholder="Enter your email address" type="email"/>
+<button class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-neutral-900 hover:bg-amber-100 font-medium text-sm transition-colors whitespace-nowrap" type="submit">
+              Inquire Now
+            </button>
+</form>
+</div>
+</div>
+<!-- Studio Coordinates & Navigation Links -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 text-xs md:text-sm border-b border-white/10">
+<div>
+<span class="block text-white font-medium mb-3">Locations</span>
+<p class="text-neutral-400 leading-relaxed">
+            Via Santo Spirito 14<br/>
+            20121 Milano, Italy
+          </p>
+<p class="text-neutral-400 mt-2">
+            Higashiyama-ku<br/>
+            Kyoto 605-0862, Japan
+          </p>
+</div>
+<div>
+<span class="block text-white font-medium mb-3">Index</span>
+<ul class="space-y-2 text-neutral-400">
+<li><a class="hover:text-white transition-colors" href="#">Residential Spaces</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Hospitality &amp; F&amp;B</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Bespoke Furniture</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Spatial Monographs</a></li>
+</ul>
+</div>
+<div>
+<span class="block text-white font-medium mb-3">Recognition</span>
+<ul class="space-y-2 text-neutral-400">
+<li>Best Interior Studio 2026</li>
+<li>Compasso d'Oro Nominee</li>
+<li>Spatial Harmony Award</li>
+<li>Architectural Digest AD100</li>
+</ul>
+</div>
+<div>
+<span class="block text-white font-medium mb-3">Social Network</span>
+<ul class="space-y-2 text-neutral-400">
+<li><a class="hover:text-white transition-colors" href="#">Instagram @uenostudio</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Substack Publications</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Pinterest Board</a></li>
+<li><a class="hover:text-white transition-colors" href="#">LinkedIn Studio</a></li>
+</ul>
+</div>
+</div>
+<!-- Legal Colophon -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-4">
+<div>
+          © 2026 UENO STUDIO S.R.L. All Rights Reserved.
+        </div>
+<div class="flex items-center gap-6">
+<a class="hover:text-neutral-400 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-neutral-400 transition-colors" href="#">Terms of Practice</a>
+<a class="hover:text-neutral-400 transition-colors" href="#">Colophon</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

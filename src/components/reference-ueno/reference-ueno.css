@@ -1,0 +1,44 @@
+/* Scoped to .ueno-ref so the template's palette and fonts never touch the site @theme. */
+.ueno-ref {
+  --ueno-espresso: #23140e;
+  --ueno-darkwood: #2e1912;
+  --ueno-walnut: #3b2017;
+  --ueno-terracotta: #9a4c2e;
+  --ueno-cognac: #8a3e1b;
+  --ueno-forest: #183823;
+  --ueno-olive: #2c4a34;
+  --ueno-sage: #506e58;
+  --ueno-chalk: #f9f8f6;
+  --ueno-paper: #f3f1ec;
+  --ueno-charcoal: #1a1817;
+  --ueno-sans: "Plus Jakarta Sans", sans-serif;
+  --ueno-display: "Syne", sans-serif;
+  --ueno-serif: "Playfair Display", serif;
+}
+
+/* Joins Tailwind's base layer so utilities still win; undoes the site body/border defaults. */
+@layer base {
+  .ueno-ref {
+    line-height: 1.5;
+  }
+
+  .ueno-ref *,
+  .ueno-ref *::before,
+  .ueno-ref *::after {
+    border-color: currentColor;
+  }
+}
+
+.ueno-ref .bg-dot-grid {
+  background-image: radial-gradient(#c2bcb6 1.1px, transparent 1.1px);
+  background-size: 24px 24px;
+}
+
+.ueno-ref .bg-dark-slats {
+  background: linear-gradient(90deg, #2a160f 0px, #2a160f 14px, #1d0e09 14px, #1d0e09 18px);
+  background-size: 18px 100%;
+}
+
+.ueno-ref .tracking-ultra-tight {
+  letter-spacing: -0.055em;
+}
