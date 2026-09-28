@@ -3,14 +3,14 @@ import lockupTransparent from "../../../reference/logo/barcode-living-lockup-tra
 export function UenoFooter() {
   return (
     <footer
-      className="w-full bg-white text-(--burgundy-light) pt-20 pb-12 px-6 md:px-12 lg:px-16 border-t border-(--burgundy-ink)/15"
+      className="on-light w-full bg-white text-(--burgundy-light) py-20 lg:py-32 px-6 lg:px-16 border-t border-(--burgundy-ink)/18"
       data-purpose="site-footer"
       id="contact"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-(--burgundy-ink)/15 items-start">
+      <div className="max-w-[1312px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 pb-16 border-b border-(--burgundy-ink)/18 items-start">
           <div className="lg:col-span-6">
-            <img src={lockupTransparent} alt="BARCODE Living" className="h-16 w-auto block mb-4" />
+            <img src={lockupTransparent} alt="BARCODE Living" className="h-20 w-auto block mb-4" />
             <p className="text-(--burgundy-light) text-sm max-w-md leading-relaxed">
               Crafting contemporary architectural spaces, bespoke furniture systems, and timeless interior atmospheres
               worldwide.
@@ -21,13 +21,17 @@ export function UenoFooter() {
               Initiate a Collaboration
             </span>
             <form className="flex flex-col sm:flex-row items-center gap-3" onSubmit={(e) => e.preventDefault()}>
+              <label htmlFor="ueno-footer-email" className="sr-only">
+                Email address
+              </label>
               <input
-                className="w-full px-5 py-3.5 rounded-full bg-white border border-(--burgundy-ink)/25 text-(--burgundy-ink) placeholder-(--burgundy-light) text-sm focus:outline-none focus:border-(--burgundy-ink) transition-colors"
+                id="ueno-footer-email"
+                className="w-full h-12 px-5 bg-white border border-(--burgundy-light) text-(--burgundy-ink) placeholder-(--burgundy-light) text-sm focus:border-(--burgundy-ink) transition-colors"
                 placeholder="Enter your email address"
                 type="email"
               />
               <button
-                className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-(--burgundy-ink) text-white hover:bg-(--burgundy-deep) font-medium text-sm transition-colors whitespace-nowrap"
+                className="w-full sm:w-auto h-12 px-8 bg-(--burgundy-ink) text-white hover:bg-(--burgundy-deep) font-medium text-sm transition-colors whitespace-nowrap"
                 type="submit"
               >
                 Inquire Now
@@ -36,7 +40,7 @@ export function UenoFooter() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 text-xs md:text-sm border-b border-(--burgundy-ink)/15">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 py-12 text-xs md:text-sm border-b border-(--burgundy-ink)/18">
           <div>
             <span className="block text-(--burgundy-ink) font-medium mb-3">Locations</span>
             <p className="text-(--burgundy-light) leading-relaxed">[Studio address — TBD]</p>

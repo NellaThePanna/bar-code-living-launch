@@ -45,6 +45,18 @@
   background-size: 18px 100%;
 }
 
+/* Focus ring follows the surface: .on-light is declared after .on-dark so white cards inside dark sections win. */
+.ueno-ref :is(a, button, input):focus-visible {
+  outline: 2px solid var(--burgundy-ink);
+  outline-offset: 3px;
+}
+.ueno-ref .on-dark :is(a, button, input):focus-visible {
+  outline-color: var(--cream-deep);
+}
+.ueno-ref .on-light :is(a, button, input):focus-visible {
+  outline-color: var(--burgundy-ink);
+}
+
 .ueno-ref .tracking-ultra-tight {
   letter-spacing: -0.055em;
 }
