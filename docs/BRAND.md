@@ -28,6 +28,11 @@ Defined in `src/styles.css` (`:root`) and exposed as Tailwind utilities via `@th
   - No colour overlays, gradients, or tints on photography.
   - Text over a photo always sits on an opaque chalk card or chip, in burgundy ink. That makes contrast hold by construction instead of depending on the photo underneath.
 
+### Hero variants
+
+- **Hero v2 (superseded):** B′ shell over one stock placeholder photo (`hero-living.jpg`), stepped through 5 discrete crops on scroll; chip read "0X / 05".
+- **Hero v3 (current, B′ shell):** same chalk card, pill CTA, and chips. The visual is the placeholder room-assembly scene (empty-room photo plus rug, wall art, sofa, plant, floor lamp, and coffee-table cut-outs), built piece by piece on a continuous, reversible scroll scrub. Chips read "Pieces placed · 0X / 06" and "Room · Placeholder". With reduced motion it shows the finished room, static. It condenses the Fit-out beat of the How We Work section, which still walks Brief → Concept → Materials → Fit-out in full on the same photo-and-cut-out stage. On wide landscape viewports (≥768px and ≥3:2) the hero groups the pieces to the right so the chalk card covers only bare floor; narrower viewports keep the section's original placements.
+
 ## Typography
 
 Loaded from Google Fonts in `src/routes/__root.tsx`.

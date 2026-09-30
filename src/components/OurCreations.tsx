@@ -1,27 +1,16 @@
 import { CurtainReveal } from "@/components/CurtainReveal";
+import afterKitchen from "@/assets/after-kitchen.jpg";
+import afterLiving from "@/assets/after-living.jpg";
+import afterSuite from "@/assets/after-suite.jpg";
+import beforeKitchen from "@/assets/before-kitchen.jpg";
+import beforeLiving from "@/assets/before-living.jpg";
+import beforeSuite from "@/assets/before-suite.jpg";
 
-// nova-debt: gradient SVGs stand in until real before/after photography exists
-const placeholder = (from: string, to: string, label: string) =>
-  `data:image/svg+xml;utf8,${encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${from}"/><stop offset="1" stop-color="${to}"/></linearGradient></defs><rect width="800" height="1000" fill="url(#g)"/><text x="400" y="510" text-anchor="middle" font-family="Jost, sans-serif" font-size="26" letter-spacing="6" fill="#FAF7F2" opacity="0.85">${label}</text></svg>`,
-  )}`;
-
+// nova-debt: stock placeholder pairs stand in until real client before/after photography exists
 const projects = [
-  {
-    title: "Project 01",
-    before: placeholder("#FEEFDC", "#F5DFC3", "BEFORE · PLACEHOLDER"),
-    after: placeholder("#8C5866", "#4A2530", "AFTER · PLACEHOLDER"),
-  },
-  {
-    title: "Project 02",
-    before: placeholder("#F5DFC3", "#FEEFDC", "BEFORE · PLACEHOLDER"),
-    after: placeholder("#63343C", "#8C5866", "AFTER · PLACEHOLDER"),
-  },
-  {
-    title: "Project 03",
-    before: placeholder("#FEEFDC", "#F5DFC3", "BEFORE · PLACEHOLDER"),
-    after: placeholder("#4A2530", "#8C5866", "AFTER · PLACEHOLDER"),
-  },
+  { title: "Project 01", before: beforeLiving, after: afterLiving },
+  { title: "Project 02", before: beforeKitchen, after: afterKitchen },
+  { title: "Project 03", before: beforeSuite, after: afterSuite },
 ];
 
 export function OurCreations() {
@@ -53,6 +42,7 @@ export function OurCreations() {
               index={index}
               mode="hover"
               size="compact"
+              placeholder
             />
           ))}
         </div>

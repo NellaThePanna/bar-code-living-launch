@@ -124,8 +124,8 @@ function Index() {
           <ClosingCta />
         </div>
       </div>
-      <footer className="relative z-10 bg-burgundy px-5 py-10 text-cream md:px-10">
-        <div className="eyebrow flex flex-col gap-3 border-t border-cream/20 pt-6 opacity-70 md:flex-row md:items-center md:justify-between">
+      <footer className="relative z-10 bg-burgundy-deep px-5 pt-4 pb-10 text-chalk md:px-10">
+        <div className="eyebrow flex flex-col gap-3 border-t border-chalk/25 pt-6 opacity-70 md:flex-row md:items-center md:justify-between">
           <span>Bar Code Living · Dubai, UAE</span>
           <div className="flex flex-wrap gap-x-8 gap-y-2">
             <a href="mailto:hello@barcodeliving.com" className="hover:opacity-100">

@@ -11,6 +11,8 @@ type Props = {
   mode?: "auto" | "hover";
   /** "compact" scales down overlay chrome for narrow grid tiles. */
   size?: "default" | "compact";
+  /** Labels the frame and alt text as placeholder photography. */
+  placeholder?: boolean;
 };
 
 export function CurtainReveal({
@@ -20,6 +22,7 @@ export function CurtainReveal({
   index,
   mode = "auto",
   size = "default",
+  placeholder = false,
 }: Props) {
   const { ref, inView } = useInView<HTMLDivElement>({ threshold: 0.45 });
   const [toggled, setToggled] = useState<boolean | null>(null);
@@ -28,10 +31,11 @@ export function CurtainReveal({
   const toggle = () => setToggled((t) => !(t ?? autoOpen));
   const compact = size === "compact";
   const chromeText = compact ? { fontSize: "0.6rem" } : undefined;
+  const altSuffix = placeholder ? " (placeholder photography)" : "";
 
   const panelBase =
     "curtain-fabric absolute overflow-hidden transition-transform duration-[850ms] ease-editorial will-change-transform motion-reduce:transition-opacity motion-reduce:duration-500";
-  const badge = "eyebrow absolute bg-burgundy px-2.5 py-1 text-cream";
+  const chip = "eyebrow bg-chalk px-2.5 py-1 text-burgundy";
 
   return (
     <div ref={ref} className="group">
@@ -44,15 +48,15 @@ export function CurtainReveal({
         onPointerEnter={(e) => mode === "hover" && e.pointerType === "mouse" && setToggled(true)}
         onPointerLeave={(e) => mode === "hover" && e.pointerType === "mouse" && setToggled(false)}
         role="img"
-        aria-label={`${title}: before and after transformation`}
+        aria-label={`${title}: before and after transformation${altSuffix}`}
       >
         {/* AFTER — underneath */}
         <img
           src={after}
-          alt={`${title} after fit-out`}
+          alt={`${title} after fit-out${altSuffix}`}
           loading="lazy"
           width={1600}
-          height={900}
+          height={912}
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -63,18 +67,25 @@ export function CurtainReveal({
             compact ? "p-3" : "p-4 sm:p-5",
           )}
         >
-          <div className="flex items-baseline gap-2.5 bg-burgundy px-2 py-1 text-cream">
-            <span className="eyebrow opacity-60" style={chromeText}>
-              0{index + 1}
-            </span>
-            <h3
-              className={cn(
-                "font-display font-medium italic",
-                compact ? "text-sm" : "text-lg sm:text-xl",
-              )}
-            >
-              {title}
-            </h3>
+          <div className="flex flex-col items-start gap-1.5">
+            <div className="flex items-baseline gap-2.5 bg-chalk px-2 py-1 text-burgundy">
+              <span className="eyebrow opacity-60" style={chromeText}>
+                0{index + 1}
+              </span>
+              <h3
+                className={cn(
+                  "font-display font-medium italic",
+                  compact ? "text-sm" : "text-lg sm:text-xl",
+                )}
+              >
+                {title}
+              </h3>
+            </div>
+            {placeholder && (
+              <span className={chip} style={chromeText}>
+                Placeholder photography
+              </span>
+            )}
           </div>
           <button
             type="button"
@@ -83,7 +94,7 @@ export function CurtainReveal({
               toggle();
             }}
             className={cn(
-              "eyebrow shrink-0 border border-cream/40 bg-burgundy/85 text-cream opacity-90 transition-opacity hover:opacity-100",
+              "eyebrow shrink-0 border border-burgundy/20 bg-chalk text-burgundy opacity-90 transition-opacity hover:opacity-100",
               compact ? "px-2 py-1" : "px-3 py-1.5",
             )}
             style={chromeText}
@@ -95,7 +106,8 @@ export function CurtainReveal({
 
         <span
           className={cn(
-            badge,
+            chip,
+            "absolute",
             compact ? "right-3 bottom-3" : "right-4 bottom-4 sm:right-5 sm:bottom-5",
           )}
           style={chromeText}
@@ -117,12 +129,13 @@ export function CurtainReveal({
             alt=""
             loading="lazy"
             width={1600}
-            height={900}
-            className="absolute inset-0 h-full w-[200%] max-w-none object-cover opacity-30 mix-blend-multiply saturate-50"
+            height={912}
+            className="absolute inset-0 h-full w-[200%] max-w-none object-cover"
           />
           <span
             className={cn(
-              badge,
+              chip,
+              "absolute",
               compact ? "left-3 bottom-3" : "left-4 bottom-4 sm:left-5 sm:bottom-5",
             )}
             style={chromeText}
@@ -145,8 +158,8 @@ export function CurtainReveal({
             alt=""
             loading="lazy"
             width={1600}
-            height={900}
-            className="absolute top-0 right-0 h-full w-[200%] max-w-none object-cover opacity-30 mix-blend-multiply saturate-50"
+            height={912}
+            className="absolute top-0 right-0 h-full w-[200%] max-w-none object-cover"
           />
         </div>
 
@@ -154,7 +167,7 @@ export function CurtainReveal({
         <div
           aria-hidden
           className={cn(
-            "pointer-events-none absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-burgundy transition-opacity duration-500",
+            "pointer-events-none absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-chalk/80 transition-opacity duration-500",
             open ? "opacity-0" : "opacity-100",
           )}
         />
@@ -163,7 +176,7 @@ export function CurtainReveal({
           <span
             aria-hidden
             className={cn(
-              "eyebrow pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cream/60 bg-burgundy/80 text-cream transition-opacity duration-300",
+              "eyebrow pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-chalk text-burgundy transition-opacity duration-300",
               compact ? "px-3.5 py-2" : "px-5 py-2.5",
               open && "opacity-0",
             )}
